@@ -34,6 +34,26 @@ h1::before {
   display: block;
 }
 `;
+  const css4 = `
+.counter {
+  counter-reset: monkey-counter;
+}
+.counter h4::before {
+  counter-increment: monkey-counter;
+  content: counter(monkey-counter);
+  position: absolute;
+  background: lightgrey;
+  width: 2em;
+  height: 2em;
+  left: -2em;
+  bottom: 0.5em;
+  border-radius: 50%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+`;
 </script>
 
 <style>
@@ -83,6 +103,29 @@ h1::before {
     content: url(//unsplash.it/500/5);
     display: block;
   }
+  .counter {
+    counter-reset: monkey-counter;
+  }
+  h4 {
+    padding: 1em;
+    position: relative;
+    text-align: left;
+  }
+  .counter h4::before {
+    counter-increment: monkey-counter;
+    content: counter(monkey-counter);
+    position: absolute;
+    background: lightgrey;
+    width: 2em;
+    height: 2em;
+    left: -2em;
+    bottom: 0.5em;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 </style>
 
 <div class="container">
@@ -101,6 +144,12 @@ h1::before {
   <div>
     <h1>Title with image decoration</h1>
   </div>
+  <div class="counter">
+    <h4>Monkey</h4>
+    <h4>Business</h4>
+    <h4>Is</h4>
+    <h4>Awesome</h4>
+  </div>
 </div>
 
 <div>
@@ -110,4 +159,6 @@ h1::before {
   <pre>{css2}</pre>
   <h3>Image decoraction</h3>
   <pre>{css3}</pre>
+  <h3>Counter</h3>
+  <pre>{css4}</pre>
 </div>
