@@ -1,6 +1,7 @@
 <script>
   import { Router, link, Route } from "svelte-routing";
   import Background from "./Background.svelte";
+  import Form from "./Form.svelte";
 
   export let url = "";
 </script>
@@ -39,11 +40,13 @@
   <Router {url}>
     <div>
       <Route path="background" component={Background} />
+      <Route path="form" component={Form} />
     </div>
     <hr />
     <nav>
       <a href="/" use:link>Home</a>
       <a href="/background" use:link>Background</a>
+      <a href="/form" use:link>Form</a>
     </nav>
   </Router>
 </main>
