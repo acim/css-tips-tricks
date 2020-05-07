@@ -28,6 +28,12 @@ a[data-tooltip]:hover::after {
   transform: scale(1);
 }
 `;
+  const css3 = `
+h1::before {
+  content: url(//unsplash.it/400/5);
+  display: block;
+}
+`;
 </script>
 
 <style>
@@ -40,6 +46,7 @@ a[data-tooltip]:hover::after {
   }
   .container div {
     margin: 3rem;
+    text-align: center;
   }
   blockquote {
     text-align: center;
@@ -72,6 +79,10 @@ a[data-tooltip]:hover::after {
   h3 {
     margin-top: 2rem;
   }
+  h1::before {
+    content: url(//unsplash.it/500/5);
+    display: block;
+  }
 </style>
 
 <div class="container">
@@ -82,10 +93,13 @@ a[data-tooltip]:hover::after {
       write code that humans can understand.
     </blockquote>
   </div>
-  <div class="link">
+  <div>
     <a href="#!" data-tooltip="This is some tooltip">
       Hover me to see the tooltip
     </a>
+  </div>
+  <div>
+    <h1>Title with image decoration</h1>
   </div>
 </div>
 
@@ -94,4 +108,6 @@ a[data-tooltip]:hover::after {
   <pre>{css1}</pre>
   <h3>Tooltip</h3>
   <pre>{css2}</pre>
+  <h3>Image decoraction</h3>
+  <pre>{css3}</pre>
 </div>
