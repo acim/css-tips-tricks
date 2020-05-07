@@ -1,61 +1,49 @@
 <script>
-  const css = `
-h1.white {
-  background: white;
-  color: black;
-  mix-blend-mode: screen;
-}
-h1.black {
-  background: black;
-  color: white;
-  mix-blend-mode: multiply;
-}
-`;
-  const tri = "center;";
+  import { Router, link, Route } from "svelte-routing";
+  import Background from "./Background.svelte";
+
+  export let url = "";
 </script>
 
 <style>
-  header {
-    background: url(/munich.jpg) center center no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-width: 100vw;
-    height: 60vh;
+  hr {
+    margin: 20px auto;
   }
-  div {
+  nav {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
-  h1 {
-    font-size: 10rem;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 5rem;
-    padding: 0 2rem;
-  }
-  h1.white {
-    background: white;
-    color: black;
-    mix-blend-mode: screen;
-  }
-  h1.black {
-    background: black;
+  a {
+    display: inline-block;
+    background-color: #8e44ad;
     color: white;
-    mix-blend-mode: multiply;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
   }
-  @media (max-width: 900px) {
-    h1 {
-      font-size: 5rem;
-    }
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    transition: transform 0.2s;
+  }
+
+  a:hover,
+  a:active {
+    transform: scale(1.1);
   }
 </style>
 
-<header>
-  <div>
-    <h1 class="white">Cool title</h1>
-    <h1 class="black">Cool title</h1>
-  </div>
-</header>
 <main>
-  <pre>{css}</pre>
+  <Router {url}>
+    <div>
+      <Route path="background" component={Background} />
+    </div>
+    <hr />
+    <nav>
+      <a href="/" use:link>Home</a>
+      <a href="/background" use:link>Background</a>
+    </nav>
+  </Router>
 </main>
