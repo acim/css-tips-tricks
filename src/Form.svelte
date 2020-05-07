@@ -1,8 +1,8 @@
 <script>
   const css = `
-  form:focus-within {
-    background-color: lightgray;
-  }
+form:focus-within {
+  background-color: lightgray;
+}
 `;
 </script>
 

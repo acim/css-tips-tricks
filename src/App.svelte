@@ -1,6 +1,7 @@
 <script>
   import { Router, link, Route } from "svelte-routing";
   import Background from "./Background.svelte";
+  import BeforeAfter from "./BeforeAfter.svelte";
   import Form from "./Form.svelte";
 
   export let url = "";
@@ -40,12 +41,14 @@
   <Router {url}>
     <div>
       <Route path="background" component={Background} />
+      <Route path="beforeafter" component={BeforeAfter} />
       <Route path="form" component={Form} />
     </div>
     <hr />
     <nav>
       <a href="/" use:link>Home</a>
       <a href="/background" use:link>Background</a>
+      <a href="/beforeafter" use:link>Before & After</a>
       <a href="/form" use:link>Form</a>
     </nav>
   </Router>
