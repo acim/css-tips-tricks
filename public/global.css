@@ -1,10 +1,12 @@
 @import url(https://unpkg.com/modern-normalize@0.6.0/modern-normalize.css);
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
 }
 
-html {
+body {
   text-rendering: optimizeLegibility;
 }
