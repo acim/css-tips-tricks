@@ -10,30 +10,38 @@ h1.black {
   color: white;
   mix-blend-mode: multiply;
 }
+h1.image {
+  margin-top: 120px;
+  background-image: url(//unsplash.it/800);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
 `;
   const tri = "center;";
 </script>
 
 <style>
   header {
-    background: url(/munich.jpg) center center no-repeat;
+    background: url(//unsplash.it/1280) center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     min-width: 100vw;
-    height: 60vh;
+    height: 40vh;
   }
   div {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   h1 {
+    margin-top: 20px;
     font-size: 10rem;
-    text-align: center;
     text-transform: uppercase;
-    margin-top: 5rem;
-    padding: 0 2rem;
   }
   h1.white {
+    margin-top: 20px;
     background: white;
     color: black;
     mix-blend-mode: screen;
@@ -42,6 +50,14 @@ h1.black {
     background: black;
     color: white;
     mix-blend-mode: multiply;
+  }
+  h1.image {
+    margin-top: 120px;
+    background-image: url(//unsplash.it/800);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
   @media (max-width: 900px) {
     h1 {
@@ -54,6 +70,9 @@ h1.black {
   <div>
     <h1 class="white">Cool title</h1>
     <h1 class="black">Cool title</h1>
+  </div>
+  <div>
+    <h1 class="image">Cool title</h1>
   </div>
 </header>
 <main>
