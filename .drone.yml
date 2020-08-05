@@ -1,0 +1,12 @@
+---
+kind: pipeline
+type: kubernetes
+name: default
+
+steps:
+  - name: lint-build
+    image: mhart/alpine-node:14
+    commands:
+      - npm ci
+      - npm run lint
+      - npm run build
