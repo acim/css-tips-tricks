@@ -1,5 +1,29 @@
 <script>
   const css = `
+button {
+  background-color: yellow;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  box-shadow: none;
+  border: 0;
+}
+button:hover,
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px deepskyblue, 0 0 0 5px yellow;
+}
+a {
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  outline: 2px solid yellow;
+  outline-offset: 2px;
+  -moz-outline-radius: 0.2rem;
+}
+::-moz-focus-inner {
+  border: 0;
+}
 `;
 </script>
 
@@ -29,18 +53,23 @@
   button {
     background-color: yellow;
     padding: 1rem;
-    border-radius: 0.1rem;
+    border-radius: 0.2rem;
     box-shadow: none;
     border: 0;
   }
   button:hover,
   button:focus {
-    box-shadow: 0 0 0 5px white, 0 0 0 10px yellow;
+    outline: none;
+    box-shadow: 0 0 0 3px deepskyblue, 0 0 0 5px yellow;
+  }
+  a {
+    text-decoration: none;
   }
   a:hover,
   a:focus {
     outline: 2px solid yellow;
-    outline-offset: 5px;
+    outline-offset: 2px;
+    -moz-outline-radius: 0.2rem;
   }
   ::-moz-focus-inner {
     border: 0;
