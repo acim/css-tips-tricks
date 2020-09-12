@@ -1,6 +1,6 @@
 {
   "name": "css-tips-tricks",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
@@ -16,7 +16,7 @@
     "crayon-animate": "^6.0.0",
     "crayon-svelte": "^6.0.0",
     "crayon-transition": "^6.0.0",
-    "eslint": "^7.8.1",
+    "eslint": "^7.9.0",
     "eslint-plugin-svelte3": "^2.7.3",
     "rollup": "^2.26.11",
     "rollup-plugin-livereload": "^2.0.0",
