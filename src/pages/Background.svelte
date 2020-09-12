@@ -17,7 +17,7 @@ h1.black {
 }
 h1.image {
   margin-top: 120px;
-  background-image: url(//unsplash.it/800);
+  background-image: url(//picsum.photos/800/600);
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
@@ -28,7 +28,7 @@ h1.image {
 
 <style>
   header {
-    background: url(//unsplash.it/1280) center center no-repeat;
+    background: url(//picsum.photos/1280/800) center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     min-width: 100vw;
@@ -57,7 +57,7 @@ h1.image {
   }
   h1.image {
     margin-top: 120px;
-    background-image: url(//unsplash.it/800);
+    background-image: url(//picsum.photos/800/600);
     background-size: cover;
     background-clip: text;
     -webkit-background-clip: text;
