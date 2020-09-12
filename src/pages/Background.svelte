@@ -32,7 +32,7 @@ h1.image {
     background-size: cover;
     background-attachment: fixed;
     min-width: 100vw;
-    height: 40vh;
+    height: 30rem;
   }
   header div {
     display: flex;

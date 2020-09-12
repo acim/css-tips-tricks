@@ -1,6 +1,6 @@
 {
   "name": "css-tips-tricks",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
