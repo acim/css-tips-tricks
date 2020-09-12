@@ -49,4 +49,6 @@
     on:click|preventDefault={() => nav.navigate('/customfocus')}>Custom Focus</a>
   <a href="." on:click|preventDefault={() => nav.navigate('/flipcard')}>Flip
     Card</a>
+  <a href="." on:click|preventDefault={() => nav.navigate('/snakehover')}>Snake
+    Hover</a>
 </nav>
