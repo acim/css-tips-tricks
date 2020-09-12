@@ -1,4 +1,7 @@
 <script>
+  import Nav from "../components/Nav.svelte";
+  export let nav;
+
   const css = `
 button {
   background-color: yellow;
@@ -97,3 +100,5 @@ a:focus {
 <div>
   <pre>{css}</pre>
 </div>
+
+<Nav {nav} />

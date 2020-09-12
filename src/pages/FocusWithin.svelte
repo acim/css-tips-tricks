@@ -1,4 +1,7 @@
 <script>
+  import Nav from "../components/Nav.svelte";
+  export let nav;
+
   const css = `
 form:focus-within {
   background-color: lightgray;
@@ -46,3 +49,5 @@ form:focus-within {
 <div>
   <pre>{css}</pre>
 </div>
+
+<Nav {nav} />

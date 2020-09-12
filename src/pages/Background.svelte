@@ -1,4 +1,7 @@
 <script>
+  import Nav from "../components/Nav.svelte";
+  export let nav;
+
   const css = `
 h1.white {
   background: white;
@@ -19,7 +22,6 @@ h1.image {
   color: transparent;
 }
 `;
-  const tri = "center;";
 </script>
 
 <style>
@@ -75,6 +77,9 @@ h1.image {
     <h1 class="image">Cool title</h1>
   </div>
 </header>
-<main>
+
+<div>
   <pre>{css}</pre>
-</main>
+</div>
+
+<Nav {nav} />

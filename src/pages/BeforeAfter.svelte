@@ -1,4 +1,7 @@
 <script>
+  import Nav from "../components/Nav.svelte";
+  export let nav;
+
   const css1 = `
 blockquote::before {
   content: open-quote;
@@ -162,3 +165,5 @@ h1::before {
   <h3>Counter</h3>
   <pre>{css4}</pre>
 </div>
+
+<Nav {nav} />

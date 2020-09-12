@@ -1,6 +1,6 @@
 {
   "name": "css-tips-tricks",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
@@ -10,6 +10,10 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^15.0.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
+    "crayon": "^6.0.1",
+    "crayon-animate": "^6.0.0",
+    "crayon-svelte": "^6.0.0",
+    "crayon-transition": "^6.0.0",
     "eslint": "^7.8.1",
     "eslint-plugin-svelte3": "^2.7.3",
     "rollup": "^2.26.11",
@@ -19,7 +23,6 @@
     "svelte": "^3.25.0"
   },
   "dependencies": {
-    "sirv-cli": "^1.0.6",
-    "svelte-routing": "^1.4.2"
+    "sirv-cli": "^1.0.6"
   }
 }
