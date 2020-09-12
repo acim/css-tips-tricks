@@ -1,6 +1,8 @@
 <script lang="ts">
   import Nav from "../components/Nav.svelte";
-  export let nav;
+  import type crayon from "crayon";
+
+  export let nav: crayon.Router;
 
   const css1 = `
 blockquote::before {

@@ -1,10 +1,7 @@
-<script>
-  import Background from "../pages/Background.svelte";
-  import BeforeAfter from "../pages/BeforeAfter.svelte";
-  import FocusWithin from "../pages/FocusWithin.svelte";
-  import CustomFocus from "../pages/CustomFocus.svelte";
+<script lang="ts">
+  import type crayon from "crayon";
 
-  export let nav;
+  export let nav: crayon.Router;
 </script>
 
 <style>
