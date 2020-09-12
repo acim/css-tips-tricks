@@ -10,3 +10,7 @@
 body {
   text-rendering: optimizeLegibility;
 }
+
+pre {
+  margin-left: 1rem;
+}

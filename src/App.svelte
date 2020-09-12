@@ -2,7 +2,7 @@
   import { Router, link, Route } from "svelte-routing";
   import Background from "./Background.svelte";
   import BeforeAfter from "./BeforeAfter.svelte";
-  import Form from "./Form.svelte";
+  import FocusWithin from "./FocusWithin.svelte";
   import CustomFocus from "./CustomFocus.svelte";
 
   export let url = "";
@@ -43,7 +43,7 @@
     <div>
       <Route path="background" component={Background} />
       <Route path="beforeafter" component={BeforeAfter} />
-      <Route path="form" component={Form} />
+      <Route path="focuswithin" component={FocusWithin} />
       <Route path="customfocus" component={CustomFocus} />
     </div>
     <hr />
@@ -51,8 +51,8 @@
       <a href="/" use:link>Home</a>
       <a href="/background" use:link>Background</a>
       <a href="/beforeafter" use:link>Before & After</a>
-      <a href="/form" use:link>Form</a>
-      <a href="/customfocus" use:link>CustomFocus</a>
+      <a href="/focuswithin" use:link>Focus Within</a>
+      <a href="/customfocus" use:link>Custom Focus</a>
     </nav>
   </Router>
 </main>
