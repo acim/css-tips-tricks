@@ -6,6 +6,7 @@ import Background from "./pages/Background.svelte";
 import BeforeAfter from "./pages/BeforeAfter.svelte";
 import CustomFocus from "./pages/CustomFocus.svelte";
 import FocusWithin from "./pages/FocusWithin.svelte";
+import FlipCard from "./pages/FlipCard.svelte";
 
 const target = document.getElementById("app");
 const nav = crayon.create();
@@ -28,5 +29,7 @@ nav.path("/beforeafter", (req, res) => req.mount(BeforeAfter, { nav }));
 nav.path("/customfocus", (req, res) => req.mount(CustomFocus, { nav }));
 
 nav.path("/focuswithin", (req, res) => req.mount(FocusWithin, { nav }));
+
+nav.path("/flipcard", (req, res) => req.mount(FlipCard, { nav }));
 
 nav.load();

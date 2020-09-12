@@ -34,7 +34,7 @@ h1.image {
     min-width: 100vw;
     height: 40vh;
   }
-  div {
+  header div {
     display: flex;
     flex-direction: column;
     align-items: center;

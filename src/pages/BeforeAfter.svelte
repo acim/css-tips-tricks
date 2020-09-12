@@ -131,6 +131,9 @@ h1::before {
     justify-content: center;
     align-items: center;
   }
+  h3 {
+    margin-left: 1rem;
+  }
 </style>
 
 <div class="container">
