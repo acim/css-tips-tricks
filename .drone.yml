@@ -8,5 +8,5 @@ steps:
     image: mhart/alpine-node:14
     commands:
       - npm ci
-      - npm run lint
+      - npm run validate
       - npm run build
