@@ -16,7 +16,7 @@
     "crayon-animate": "^6.0.0",
     "crayon-svelte": "^6.0.0",
     "crayon-transition": "^6.0.0",
-    "eslint": "^7.12.1",
+    "eslint": "^7.13.0",
     "eslint-plugin-svelte3": "^2.7.3",
     "rollup": "^2.33.1",
     "rollup-plugin-livereload": "^2.0.0",
