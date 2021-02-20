@@ -1,0 +1,29 @@
+on:
+  push:
+  pull_request:
+
+jobs:
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - name: Set up cache
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Check out
+        uses: actions/checkout@v2
+
+      - name: Validate
+        run: |
+          npm ci
+          npm run validate
